@@ -1,7 +1,9 @@
-## Additional Files
+## About Project
 
-In this repository, you'll find two additional files:
+This app is a simple yet powerful tool designed to help users organize tasks and manage their daily activities efficiently. With features like task creation, editing, marking tasks as completed, and deleting tasks, users can prioritize their work and stay focused on what needs to be done. Whether it's for personal use or collaborative team projects, todo list apps offer a convenient way to track progress, set deadlines, and achieve goals effectively. [It's a basic version coming soon with full version]
 
-1. **students.json:** This file contains student data.
+### For the backend API utilizing Symfony, if you wish to explore the backend API code, please visit the repository URL below
 
-2. **StudentsSingleQuery component:** This component is specifically designed for efficiently retrieving a student list using a single query. If this functionality is not needed, feel free to disregard this component.
+```
+https://github.com/ronykader/todo-symfony-rest-api
+```

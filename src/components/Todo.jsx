@@ -11,7 +11,7 @@ const Todo = () => {
   }, []);
 
   const fetchTasks = async () => {
-    const response = await axios.get("http://api.w3zones.com/api/tasks");
+    const response = await axios.get("https://api-todo.w3zones.com/api/tasks");
     setTasks(response.data);
   };
 
@@ -29,7 +29,7 @@ const Todo = () => {
 
   const handleAddTask = async () => {
     if (validateForm()) {
-      await axios.post("http://api.w3zones.com/api/task/create", {
+      await axios.post("https://api-todo.w3zones.com/api/task/create", {
         name: newTask,
         deadline: deadline,
       });
@@ -40,12 +40,12 @@ const Todo = () => {
   };
 
   const handleDeleteTask = async (task) => {
-    await axios.delete(`http://api.w3zones.com/api/tasks/${task}/delete`);
+    await axios.delete(`https://api-todo.w3zones.com/api/tasks/${task}/delete`);
     fetchTasks();
   };
 
   const handleCheckboxChange = async (task, completed) => {
-    await axios.put(`http://api.w3zones.com/api/tasks/${task}/update`, {
+    await axios.put(`https://api-todo.w3zones.com/api/tasks/${task}/update`, {
       completed: !completed,
     });
     fetchTasks();
